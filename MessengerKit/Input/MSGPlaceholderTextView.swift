@@ -148,6 +148,10 @@ open class MSGPlaceholderTextView: UIView {
         }
         textView.spellCheckingType = .no
         textView.returnKeyType = .next
+        let item = textView.inputAssistantItem
+        item.leadingBarButtonGroups = [];
+        item.trailingBarButtonGroups = [];
+
     }
     
     open override func resignFirstResponder() -> Bool {

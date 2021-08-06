@@ -120,7 +120,7 @@ open class MSGInputView: UIControl {
 extension MSGInputView: MSGPlaceholderTextViewDelegate {
 
     open func textViewDidChange(_ textView: UITextView) {
-        sendButton.isEnabled = textView.text != ""
+        sendButton.isEnabled = !textView.text.isBlank
         let size = textView.sizeThatFits(CGSize(width: textView.bounds.size.width, height: .infinity))
         let height = size.height + 11
 
@@ -129,4 +129,10 @@ extension MSGInputView: MSGPlaceholderTextViewDelegate {
         sendActions(for: .valueChanged)
     }
 
+}
+
+private extension String {
+  var isBlank: Bool {
+    return allSatisfy({ $0.isWhitespace })
+  }
 }
