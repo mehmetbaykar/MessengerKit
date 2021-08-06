@@ -104,6 +104,9 @@ open class MSGPlaceholderTextView: UIView {
     private func addSubviews() {
         
         textView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.adjustTextView()
+        
         label.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(label)
@@ -132,6 +135,19 @@ open class MSGPlaceholderTextView: UIView {
         textView.backgroundColor = .clear
         textView.tintColor = tintColor
         textView.delegate = self
+    }
+    
+    private func adjustTextView(){
+        textView.textContentType = .none
+        textView.autocapitalizationType = .none
+        textView.autocorrectionType = .no
+        if #available(iOS 11.0, *) {
+            textView.smartDashesType = .no
+            textView.smartInsertDeleteType = .no
+            textView.smartQuotesType = .no
+        }
+        textView.spellCheckingType = .no
+        textView.returnKeyType = .next
     }
     
     open override func resignFirstResponder() -> Bool {
