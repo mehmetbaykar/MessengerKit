@@ -100,9 +100,8 @@ open class MSGMessengerViewController: UIViewController {
             tintColor = view.tintColor
         }
         
-        view.backgroundColor = style.backgroundColor
-        
         setupCollectionView()
+        
         setupInput()
     }
     
@@ -135,13 +134,17 @@ open class MSGMessengerViewController: UIViewController {
     }
     
     private func loadFromDefaultNib() {
-        let view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
-            .instantiate(withOwner: self, options: nil).first as? MSGMessengerView
+        guard let view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
+            .instantiate(withOwner: self, options: nil).first as? MSGMessengerView else{
+                fatalError("Check MSGMessengerView")
+            }
+       
         
-        view?.frame = CGRect.zero
-        view?.backgroundView.backgroundColor = style.inputViewBackgroundColor
-        view?.add(collectionView)
-        view?.add(messageInputView)
+        view.frame = .zero
+        view.backgroundView.backgroundColor = style.inputViewBackgroundColor
+        view.backgroundColor = style.backgroundColor
+        view.add(collectionView)
+        view.add(messageInputView)
         view.add(style.headerView)
         
         self.view = view
@@ -204,34 +207,37 @@ open class MSGMessengerViewController: UIViewController {
     /// Sets the users that are currently typing.
     /// Can be overridden for additional control.
     ///
-    /// - Parameter users: The users that are typing.
-    open func setUsersTyping(_ users: [MSGUser]) {
+    /// - Parameter users: The users that are typing. If set nil or zero it will remove label from view
+    open func setUsersTyping(_ users: [MSGUser]?) {
         
-        // TODO: add appearance proxy!!
-        
-        guard users.count > 0 else {
+        guard let users = users,
+              users.count > 0 else {
             collectionView.typingLabel.text = nil
             collectionView.layoutTypingLabelIfNeeded()
             return
         }
         
-        var attributedText: NSMutableAttributedString!
+        let attributedText : NSMutableAttributedString!
         
-        if users.count == 1 {
-            attributedText = NSMutableAttributedString(string: users[0].displayName, attributes: [
-                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
-                .foregroundColor: UIColor.darkText
-            ])
-        } else {
-            attributedText = NSMutableAttributedString(string: "\(users.count) people", attributes: [
-                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
-                .foregroundColor: UIColor.darkText
-            ])
+        var names = ""
+        
+        for user in users{
+            names += "\(user.displayName),"
         }
         
-        attributedText.append(NSAttributedString(string: users.count == 1 ? " is typing…" : " typing…", attributes: [
-            .font: UIFont.systemFont(ofSize: 14, weight: .medium),
-            .foregroundColor: UIColor.black
+        names.removeLast()
+        names += " "
+        
+        attributedText = NSMutableAttributedString(string: names, attributes: [
+            .font: UIFont.systemFont(ofSize: 14, weight: .bold),
+            .foregroundColor: UIColor.darkText])
+       
+
+        
+        attributedText.append(NSAttributedString(string:
+                                                    users.count == 1 ? self.style.isTypingPlaceHolder : self.style.areTypingPlaceHolder , attributes: [
+            .font:self.style.typingLabel,
+                                                        .foregroundColor: self.style.typingTextColor
         ]))
         
         
