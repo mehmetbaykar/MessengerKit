@@ -142,6 +142,7 @@ open class MSGMessengerViewController: UIViewController {
         view?.backgroundView.backgroundColor = style.inputViewBackgroundColor
         view?.add(collectionView)
         view?.add(messageInputView)
+        view.add(style.headerView)
         
         self.view = view
     }

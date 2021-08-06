@@ -9,7 +9,15 @@
 import MessengerKit
 
 struct CustomStyle: MSGMessengerStyle {
-
+    public var headerView: UIView = UIView()
+    
+    public var isTypingPlaceHolder: String = "is typing"
+    
+    public var areTypingPlaceHolder: String = "are typing"
+    
+    public var typingLabel: UIFont = .systemFont(ofSize: 15)
+    
+    public var typingTextColor: UIColor = .black
     var outgoingLinkUnderlineStyle: NSNumber = 0
 
     var incomingLinkUnderlineStyle: NSNumber = 0

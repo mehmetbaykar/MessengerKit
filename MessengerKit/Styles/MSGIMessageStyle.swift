@@ -10,6 +10,15 @@ import UIKit
 
 /// Styles the `MSGMessengerViewController` to be similar in style to iMessage.
 public struct MSGIMessageStyle: MSGMessengerStyle {
+    public var headerView: UIView = UIView(frame: .zero)
+    
+    public var isTypingPlaceHolder: String = "is typing"
+    
+    public var areTypingPlaceHolder: String = "are typing"
+    
+    public var typingLabel: UIFont = .systemFont(ofSize: 15)
+    
+    public var typingTextColor: UIColor = .black
     
     public var collectionView: MSGCollectionView.Type = MSGImessageCollectionView.self
     

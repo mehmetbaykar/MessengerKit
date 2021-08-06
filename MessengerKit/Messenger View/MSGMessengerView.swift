@@ -8,8 +8,8 @@
 
 import UIKit
 
-/// Internal class used to load the collection view and input view for `MSGMessengerView`.
-/// This view simply contains two containers and is loaded from the `MSGMessengerView` nib.
+/// Internal class used to load the collection view, headerView and input view for `MSGMessengerView`.
+/// This view simply contains there containers and is loaded from the `MSGMessengerView` nib.
 @objc(MSGMessengerView)
 class MSGMessengerView: UIView {
     
@@ -18,6 +18,8 @@ class MSGMessengerView: UIView {
     @IBOutlet weak var collectionViewContainer: UIView!
     
     @IBOutlet weak var inputViewContainer: UIView!
+    
+    @IBOutlet weak var headerContainer: UIView!
 
     func add(_ collectionView: MSGCollectionView) {
         
@@ -43,6 +45,18 @@ class MSGMessengerView: UIView {
         inputView.trailingAnchor.constraint(equalTo: inputViewContainer.trailingAnchor).isActive = true
         inputView.bottomAnchor.constraint(equalTo: inputViewContainer.bottomAnchor).isActive = true
         
+    }
+    
+    func add(_ headerView:UIView) {
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        headerContainer.addSubview(headerView)
+        headerContainer.bringSubviewToFront(headerView)
+        
+        headerView.topAnchor.constraint(equalTo: headerContainer.topAnchor).isActive = true
+        headerView.leadingAnchor.constraint(equalTo: headerContainer.leadingAnchor).isActive = true
+        headerView.trailingAnchor.constraint(equalTo: headerContainer.trailingAnchor).isActive = true
+        headerView.bottomAnchor.constraint(equalTo: headerContainer.bottomAnchor).isActive = true
     }
     
 }

@@ -10,6 +10,15 @@ import UIKit
 
 /// Styles the messenger view to be similar to that used in Travamigos.
 public struct MSGTravamigosStyle: MSGMessengerStyle {
+    public var headerView: UIView = UIView(frame: .zero)
+    
+    public var isTypingPlaceHolder: String = "is typing"
+    
+    public var areTypingPlaceHolder: String = "are typing"
+    
+    public var typingLabel: UIFont = .systemFont(ofSize: 15)
+    
+    public var typingTextColor: UIColor = .black
     
     public var collectionView: MSGCollectionView.Type = MSGTravCollectionView.self
     

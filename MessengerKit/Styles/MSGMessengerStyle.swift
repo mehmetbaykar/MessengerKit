@@ -19,6 +19,20 @@ public protocol MSGMessengerStyle {
 
     /// The input view class to use
     var inputView: MSGInputView.Type { get }
+    
+    var headerView: UIView { get }
+    
+    /// The placeholder that is displayed on the typingLabel for single user
+    var isTypingPlaceHolder:String{ get }
+    
+    /// The placeholder that is displayed on the typingLabel for multiple users
+    var areTypingPlaceHolder:String { get }
+    
+    /// The text font of the typingLabel
+    var typingLabel:UIFont { get }
+    
+    /// The text color of the typingLabel
+    var typingTextColor : UIColor { get }
 
     /// The height of the header above the section
     var headerHeight: CGFloat { get }
