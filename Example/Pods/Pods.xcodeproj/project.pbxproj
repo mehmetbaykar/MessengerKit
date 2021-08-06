@@ -106,21 +106,21 @@
 		2D4E280E6FA3BBC850B5BFCFC0C84C8B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MessengerKit/Assets.xcassets; sourceTree = "<group>"; };
 		2D7AAC54A53AD2E6BBCA9D6866F0E365 /* MSGTravIncomingBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravIncomingBubble.swift; sourceTree = "<group>"; };
 		2DEAEC4A9F98EA5572995449D0F3A128 /* MSGImessageIncomingHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGImessageIncomingHeaderView.xib; sourceTree = "<group>"; };
-		314B7368ACDB3DD72B2F8A389BEF5C51 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MessengerKit.framework; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		314B7368ACDB3DD72B2F8A389BEF5C51 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3389D0992B1F58424E83C1FFBC70C267 /* MessengerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessengerKit.release.xcconfig; sourceTree = "<group>"; };
 		39DA7A97C3A96A81B69AF9B4475E0D1A /* MSGMessengerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGMessengerViewController.swift; sourceTree = "<group>"; };
 		3ADCC78DED48A70AB73C827EFF009E54 /* Pods-MessengerKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MessengerKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3BFA67D8DE5846A5B94E19628BECDF1D /* MSGMessageCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGMessageCellDelegate.swift; sourceTree = "<group>"; };
 		3C69965B22AD79A29038BB93B48E6E33 /* MSGSectionReusableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGSectionReusableViewDelegate.swift; sourceTree = "<group>"; };
-		406A4184AA64651D0BF73EC32D0A77D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		406A4184AA64651D0BF73EC32D0A77D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		409937037DB7C4C080EEAC5DCF25CBB3 /* MSGTravInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravInputView.swift; sourceTree = "<group>"; };
 		4296AAC9B83E8468E2E2875852CAB80A /* MSGIncomingEmojiCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGIncomingEmojiCollectionViewCell.xib; sourceTree = "<group>"; };
 		4362ADCBE1F237EA18747DE081D86DDA /* MSGTravCollectionViewSectionFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewSectionFooter.swift; sourceTree = "<group>"; };
 		49ADEFF06A7EE0FE8B47332E99F57918 /* MSGImessageOutgoingFooterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGImessageOutgoingFooterView.xib; sourceTree = "<group>"; };
 		4CC41E94D58A46AD30311BD4BDDDDA7E /* MSGTravCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		50672895798DD5A5703900EAD6A6F7D9 /* Pods_MessengerKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MessengerKit_Example.framework; path = "Pods-MessengerKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50672895798DD5A5703900EAD6A6F7D9 /* Pods_MessengerKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5162507A8CE5EA4D79AB0BA365C015AB /* KeyboardFrameObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardFrameObserver.swift; sourceTree = "<group>"; };
-		51CC52B15B7D0DF998EB9DA116D41AE2 /* MessengerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MessengerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		51CC52B15B7D0DF998EB9DA116D41AE2 /* MessengerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MessengerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5282A548AE6F9DD27FDBF86940145F50 /* Pods-MessengerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MessengerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57C2DCFC62EB746DEE5347FEDBCCFFE2 /* MSGInputSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGInputSeparatorView.swift; sourceTree = "<group>"; };
 		5999609B15C64EC8948EF042647DCF76 /* MSGTravCollectionViewSectionHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewSectionHeader.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		9926179AF27A3A17A0CF83140F0347CC /* MSGMessengerViewController + Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "MSGMessengerViewController + Helpers.swift"; sourceTree = "<group>"; };
 		9D1D1B169080663C86F4CF70794F8CB3 /* MSGTravCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewCell.swift; sourceTree = "<group>"; };
 		9D82F2395011F7FE32D56ECA8B86B3B4 /* MSGOutgoingTravCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGOutgoingTravCollectionViewCell.xib; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5546F1279BD363809D4A57F8E2F0B1 /* MSGSectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGSectionReusableView.swift; sourceTree = "<group>"; };
 		9F8C2D9ABC7EF407686FA21004EA3E8A /* Pods-MessengerKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MessengerKit_Example.modulemap"; sourceTree = "<group>"; };
 		A33F87C47F9604CA7F2DE84628816EE9 /* MSGIncomingTravCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGIncomingTravCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		BA70B62F25BD0424412EB75B468E4FB1 /* MSGIMessageStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGIMessageStyle.swift; sourceTree = "<group>"; };
 		BE951F33EE4496C29E483489838E3570 /* MSGTravCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionView.swift; sourceTree = "<group>"; };
 		C15FE8534812D8C3C9982E073940E057 /* MSGMessengerViewController + CellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "MSGMessengerViewController + CellDelegate.swift"; sourceTree = "<group>"; };
-		C729C070F0883FB64151A4067FD5545A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C729C070F0883FB64151A4067FD5545A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C8F8007C84C4430BB9332F28FA823DB6 /* MSGTailOutgoingBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTailOutgoingBubble.swift; sourceTree = "<group>"; };
 		C94FCC9F25F5F80B3AAA64043A73DFBF /* MSGMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGMessage.swift; sourceTree = "<group>"; };
 		CCB7EAA8A046E127CEFBF3FE454AC3DA /* MSGTravOutgoingBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravOutgoingBubble.swift; sourceTree = "<group>"; };
@@ -219,7 +219,6 @@
 				9D82F2395011F7FE32D56ECA8B86B3B4 /* MSGOutgoingTravCollectionViewCell.xib */,
 				9D1D1B169080663C86F4CF70794F8CB3 /* MSGTravCollectionViewCell.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -232,7 +231,6 @@
 				23F1E46F612B7952A86165BB853215BE /* Media */,
 				F2CCA8511E908E8CF9072EC8F37AF4AE /* Text */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -264,7 +262,6 @@
 				B36175501ACE9B56210B0195476B9709 /* MSGIncomingImageCollectionViewCell.xib */,
 				2700CC958ABD349273ECFB48D33DF023 /* MSGOutgoingImageCollectionViewCell.xib */,
 			);
-			name = Media;
 			path = Media;
 			sourceTree = "<group>";
 		};
@@ -275,7 +272,6 @@
 				91ECA459F496D44020AEE83A794357D4 /* MSGImessageInputView.xib */,
 				B6BDF770E39E1EE02EAB3260CB89E41F /* MSGImessageSendButton.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -285,7 +281,6 @@
 				57C2DCFC62EB746DEE5347FEDBCCFFE2 /* MSGInputSeparatorView.swift */,
 				409937037DB7C4C080EEAC5DCF25CBB3 /* MSGTravInputView.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -313,7 +308,6 @@
 				B0BA9DE451A0108DCA1A45764C557C69 /* MSGTravOutgoingCollectionViewSectionFooter.xib */,
 				2049854C95BE1864AAF9686990B5E680 /* MSGTravOutgoingCollectionViewSectionHeader.xib */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -339,7 +333,6 @@
 				B48EC2D954FA2A97758AAA54C8A05EDB /* MSGTailIncomingBubble.swift */,
 				C8F8007C84C4430BB9332F28FA823DB6 /* MSGTailOutgoingBubble.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -350,7 +343,6 @@
 				4296AAC9B83E8468E2E2875852CAB80A /* MSGIncomingEmojiCollectionViewCell.xib */,
 				2849B96372BA520C590358E4F6B7A27F /* MSGOutgoingEmojiCollectionViewCell.xib */,
 			);
-			name = Emoji;
 			path = Emoji;
 			sourceTree = "<group>";
 		};
@@ -388,7 +380,6 @@
 				BE951F33EE4496C29E483489838E3570 /* MSGTravCollectionView.swift */,
 				4CC41E94D58A46AD30311BD4BDDDDA7E /* MSGTravCollectionViewFlowLayout.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -410,7 +401,6 @@
 				615B333530627066C265A66950AC15EE /* MSGOutgoingTailCollectionViewCell.xib */,
 				6A8806737FA38449A8B76AFAD70690A8 /* MSGTailCollectionViewCell.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -420,7 +410,6 @@
 				2D7AAC54A53AD2E6BBCA9D6866F0E365 /* MSGTravIncomingBubble.swift */,
 				CCB7EAA8A046E127CEFBF3FE454AC3DA /* MSGTravOutgoingBubble.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -480,7 +469,6 @@
 				26572A16389B1945C03E867EEFCB5F51 /* iMessage */,
 				40E8F1AE01F3E85CA92E019EC930D5DF /* Travamigos */,
 			);
-			name = Styles;
 			path = Styles;
 			sourceTree = "<group>";
 		};
@@ -490,7 +478,6 @@
 				DE5BB5A4D71D0BE4DC7C3FC5035D5BE8 /* iMessage */,
 				9A36379C85EC7379E3081722B70014BB /* Travamigos */,
 			);
-			name = Styles;
 			path = Styles;
 			sourceTree = "<group>";
 		};
@@ -540,7 +527,6 @@
 				17D02450ACE806C2C38DF01D9E89A098 /* MSGImessageCollectionView.swift */,
 				D0B2C43D12CBBD2D98260697FF66559B /* MSGImessageTravCollectionViewFlowLayout.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -550,7 +536,6 @@
 				9F2F93E7AE8D1AE4ADEC4A41E366F160 /* iMessage */,
 				120768AFD1808379F18CFBD2DA636043 /* Travamigos */,
 			);
-			name = Text;
 			path = Text;
 			sourceTree = "<group>";
 		};
@@ -562,7 +547,6 @@
 				FD99D60BC0E51A343A839F016B83397D /* iMessage */,
 				4C24A253C5F6A5A1EFC9F17C78EFCFDC /* Travamigos */,
 			);
-			name = "Header Footers";
 			path = "Header Footers";
 			sourceTree = "<group>";
 		};
@@ -576,7 +560,6 @@
 				49ADEFF06A7EE0FE8B47332E99F57918 /* MSGImessageOutgoingFooterView.xib */,
 				2A3E0D5ADA33B3A2A593DA36142A069A /* MSGImessageOutgoingHeaderView.xib */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -647,6 +630,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					E8488A2CCB6FA84EDED4297F8C7DB493 = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -865,8 +853,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -896,7 +883,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -928,7 +915,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
