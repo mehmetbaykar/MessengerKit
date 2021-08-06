@@ -19,15 +19,14 @@ class ViewController: MSGMessengerViewController {
     
     override var style: MSGMessengerStyle {
         var style = MessengerKit.Styles.iMessage
-        style.headerHeight = 0
-//        style.inputPlaceholder = "Message"
-//        style.alwaysDisplayTails = true
-//        style.outgoingBubbleColor = .magenta
-//        style.outgoingTextColor = .black
-//        style.incomingBubbleColor = .green
-//        style.incomingTextColor = .yellow
-//        style.backgroundColor = .orange
-//        style.inputViewBackgroundColor = .purple
+        style.inputPlaceholder = "Message"
+        style.alwaysDisplayTails = true
+        style.outgoingBubbleColor = .magenta
+        style.outgoingTextColor = .black
+        style.incomingBubbleColor = .green
+        style.incomingTextColor = .yellow
+        style.backgroundColor = .orange
+        style.inputViewBackgroundColor = .purple
         return style
     }
     
