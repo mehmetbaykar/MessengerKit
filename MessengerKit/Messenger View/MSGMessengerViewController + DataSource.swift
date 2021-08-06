@@ -8,7 +8,10 @@
 
 import UIKit
 
-extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDataSourcePrefetching, MSGSectionReusableViewDelegate {
+extension MSGMessengerViewController: UICollectionViewDataSource,
+                                      UICollectionViewDelegateFlowLayout,
+                                      UICollectionViewDataSourcePrefetching,
+                                      MSGSectionReusableViewDelegate {
     
     // MARK: - DataSource
     
