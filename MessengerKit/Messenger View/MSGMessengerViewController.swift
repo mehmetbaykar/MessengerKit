@@ -112,6 +112,7 @@ open class MSGMessengerViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         if shouldScrollToBottom {
+            shouldScrollToBottom = false
             collectionView.scrollToBottom(animated: true)
         }
     }
