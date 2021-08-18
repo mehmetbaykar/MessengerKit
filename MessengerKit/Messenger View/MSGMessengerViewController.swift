@@ -44,7 +44,7 @@ open class MSGMessengerViewController: UIViewController {
     // MARK: - Private Properties
     
     /// The layout guide for the keyboard
-    private let keyboardLayoutGuide = KeyboardLayoutGuide()
+//    private let keyboardLayoutGuide = KeyboardLayoutGuide()
     
     /// Sizes of the bubbles will be cached here for styles that use them
     internal var cachedSizes = [Int:CGSize]()
@@ -160,8 +160,8 @@ open class MSGMessengerViewController: UIViewController {
             fatalError("Root view is not MSGMessengerView!!")
         }
         
-        view.addLayoutGuide(keyboardLayoutGuide)
-        view.inputViewContainer.bottomAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor).isActive = true
+//        view.addLayoutGuide(keyboardLayoutGuide)
+//        view.inputViewContainer.bottomAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor).isActive = true
     
         messageInputView.addTarget(self, action: #selector(inputViewDidChange(inputView:)), for: .valueChanged)
         messageInputView.addTarget(self, action: #selector(inputViewPrimaryActionTriggered(inputView:)), for: .primaryActionTriggered)
