@@ -165,12 +165,12 @@ extension TravamigosViewController: MSGDataSource {
         return messages[indexPath.section][indexPath.item]
     }
     
-    func footerTitle(for section: Int) -> String? {
+    func footerTitle(for indexPath: IndexPath) -> String? {
         return "Just now"
     }
     
-    func headerTitle(for section: Int) -> String? {
-        return messages[section].first?.user.displayName
+    func headerTitle(for indexPath: IndexPath) -> String? {
+        return messages[indexPath.row].first?.user.displayName
     }
     
 }

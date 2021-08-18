@@ -84,24 +84,7 @@ class ViewController: MSGMessengerViewController {
     
     override func insert(_ message: MSGMessage) {
         
-        collectionView.performBatchUpdates({
-            if let lastSection = self.messages.last, let lastMessage = lastSection.last, lastMessage.user.displayName == message.user.displayName {
-                self.messages[self.messages.count - 1].append(message)
-                
-                let sectionIndex = self.messages.count - 1
-                let itemIndex = self.messages[sectionIndex].count - 1
-                self.collectionView.insertItems(at: [IndexPath(item: itemIndex, section: sectionIndex)])
-                
-            } else {
-                self.messages.append([message])
-                let sectionIndex = self.messages.count - 1
-                self.collectionView.insertSections([sectionIndex])
-            }
-        }, completion: { (_) in
-            self.collectionView.scrollToBottom(animated: true)
-            self.collectionView.layoutTypingLabelIfNeeded()
-        })
-        
+        self.insert([message])
     }
     
     override func insert(_ messages: [MSGMessage], callback: (() -> Void)? = nil) {
@@ -123,7 +106,6 @@ class ViewController: MSGMessengerViewController {
             }
         }, completion: { (_) in
             self.collectionView.scrollToBottom(animated: false)
-            self.collectionView.layoutTypingLabelIfNeeded()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 callback?()
             }
@@ -154,13 +136,19 @@ extension ViewController: MSGDataSource {
     func message(for indexPath: IndexPath) -> MSGMessage {
         return messages[indexPath.section][indexPath.item]
     }
-    
-    func footerTitle(for section: Int) -> String? {
-        return "Just now"
+    func footerTitle(for indexPath: IndexPath) -> String? {
+        if let last = messages[indexPath.section].last{
+            return last.sentAt.description
+        }else{
+            if let first = messages[indexPath.section].first{
+                return first.sentAt.description
+            }
+        }
+        return "Shit"
     }
     
-    func headerTitle(for section: Int) -> String? {
-        return messages[section].first?.user.displayName
+    func headerTitle(for indexPath: IndexPath) -> String? {
+        return messages[indexPath.row][indexPath.item].user.displayName
     }
 
 }

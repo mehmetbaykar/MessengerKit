@@ -171,7 +171,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource,
             footer.message = message
             footer.style = style
             footer.delegate = self
-            footer.title = dataSource?.footerTitle(for: indexPath.section)
+            footer.title = dataSource?.footerTitle(for: indexPath)
             
             return footer
             
@@ -184,7 +184,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource,
             header.message = message
             header.style = style
             header.delegate = self
-            header.title = dataSource?.headerTitle(for: indexPath.section)
+            header.title = dataSource?.headerTitle(for: indexPath)
             
             return header
             

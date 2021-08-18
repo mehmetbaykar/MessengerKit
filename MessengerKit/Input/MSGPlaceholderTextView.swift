@@ -140,18 +140,17 @@ open class MSGPlaceholderTextView: UIView {
     private func adjustTextView(){
         textView.textContentType = .none
         textView.autocapitalizationType = .none
-        textView.autocorrectionType = .no
+        textView.autocorrectionType = .yes
+        textView.keyboardType = .twitter
         if #available(iOS 11.0, *) {
-            textView.smartDashesType = .no
-            textView.smartInsertDeleteType = .no
-            textView.smartQuotesType = .no
+            textView.smartDashesType = .yes
+            textView.smartInsertDeleteType = .yes
+            textView.smartQuotesType = .yes
         }
-        textView.spellCheckingType = .no
-        textView.returnKeyType = .next
-        let item = textView.inputAssistantItem
-        item.leadingBarButtonGroups = [];
-        item.trailingBarButtonGroups = [];
-
+        textView.spellCheckingType = .yes
+        textView.returnKeyType = .default
+    
+        textView.inputAccessoryView = InputAccessoryViewPlaceholder()
     }
     
     open override func resignFirstResponder() -> Bool {
@@ -171,6 +170,7 @@ extension MSGPlaceholderTextView: UITextViewDelegate {
         label.isHidden = textView.text != ""
     }
     
+    
 }
 
 public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
@@ -178,3 +178,4 @@ public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
     func textViewDidChange(_ textView: UITextView)
     
 }
+

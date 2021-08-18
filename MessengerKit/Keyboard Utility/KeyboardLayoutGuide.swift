@@ -46,7 +46,9 @@ public class KeyboardLayoutGuide : UILayoutGuide {
                 heightConstraint.constant = keyboardFrame.height
                 
                 if animated {
-                    view.layoutIfNeeded()
+                    UIView.animate(withDuration: 0, delay: 0, options: .curveEaseInOut, animations: {
+                        view.layoutIfNeeded()
+                    })
                 }
             }
         }

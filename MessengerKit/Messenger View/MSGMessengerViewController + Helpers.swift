@@ -19,7 +19,6 @@ extension MSGMessengerViewController {
             
         }, completion: { (_) in
             self.collectionView.scrollToBottom(animated: true)
-            self.collectionView.layoutTypingLabelIfNeeded()
         })
         
     }
@@ -39,7 +38,6 @@ extension MSGMessengerViewController {
             
         }, completion: { (_) in
             self.collectionView.scrollToBottom(animated: true)
-            self.collectionView.layoutTypingLabelIfNeeded()
         })
         
         

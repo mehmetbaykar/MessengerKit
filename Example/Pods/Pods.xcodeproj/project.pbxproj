@@ -32,6 +32,7 @@
 		5E3A7E04FBB66F1C27D67D3FED8CDD27 /* MSGIMessageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70B62F25BD0424412EB75B468E4FB1 /* MSGIMessageStyle.swift */; };
 		5EDC86C25717344024010BF629323F8E /* Pods-MessengerKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E60E79E4E8DE62CF841C4810D118CD6F /* Pods-MessengerKit_Example-dummy.m */; };
 		6091236D32743DC1C6727E24D1A68DA7 /* MSGTravCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE951F33EE4496C29E483489838E3570 /* MSGTravCollectionView.swift */; };
+		613C2F2526CDB4B100E0F044 /* InputAccessoryViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613C2F2426CDB4B100E0F044 /* InputAccessoryViewPlaceholder.swift */; };
 		6BF550BF855F8CD2D4B26EC389470ED7 /* MSGMessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DA7A97C3A96A81B69AF9B4475E0D1A /* MSGMessengerViewController.swift */; };
 		6F8ECF0E573E11172AFF27B718D8552B /* MSGImessageOutgoingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49ADEFF06A7EE0FE8B47332E99F57918 /* MSGImessageOutgoingFooterView.xib */; };
 		77C0771E564E1C032AF2F84AD91CFDC3 /* MSGImessageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7B5A5CD2C12EA847438412108D61C3 /* MSGImessageFooterView.swift */; };
@@ -124,6 +125,7 @@
 		5282A548AE6F9DD27FDBF86940145F50 /* Pods-MessengerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MessengerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57C2DCFC62EB746DEE5347FEDBCCFFE2 /* MSGInputSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGInputSeparatorView.swift; sourceTree = "<group>"; };
 		5999609B15C64EC8948EF042647DCF76 /* MSGTravCollectionViewSectionHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewSectionHeader.swift; sourceTree = "<group>"; };
+		613C2F2426CDB4B100E0F044 /* InputAccessoryViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccessoryViewPlaceholder.swift; sourceTree = "<group>"; };
 		615B333530627066C265A66950AC15EE /* MSGOutgoingTailCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGOutgoingTailCollectionViewCell.xib; sourceTree = "<group>"; };
 		631BCA6D2C307E41922F7890D93E6986 /* MSGEmojiCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGEmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 		65033785C60CB633111E304067031C9D /* MessengerKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MessengerKit-Info.plist"; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				5162507A8CE5EA4D79AB0BA365C015AB /* KeyboardFrameObserver.swift */,
 				7C98608744E28F25079E2A660BA76EFF /* KeyboardFrameObserversManager.swift */,
 				0CF5A0060DF887C0115584DC48E0BAE4 /* KeyboardLayoutGuide.swift */,
+				613C2F2426CDB4B100E0F044 /* InputAccessoryViewPlaceholder.swift */,
 			);
 			name = "Keyboard Utility";
 			path = "MessengerKit/Keyboard Utility";
@@ -718,6 +721,7 @@
 				F49B652E49C5FE10147E85ECF859980E /* MSGMessage.swift in Sources */,
 				FD51AAF9E2379E0756E8C1F5933C56A2 /* MSGMessageBody.swift in Sources */,
 				407D5131B2FB617D02ACB514B0EFB908 /* MSGMessageCell.swift in Sources */,
+				613C2F2526CDB4B100E0F044 /* InputAccessoryViewPlaceholder.swift in Sources */,
 				AAA081750B48C7D559D201896AAF38A4 /* MSGMessageCellDelegate.swift in Sources */,
 				3821AAD65037A39C7FA6516F50AEC58B /* MSGMessengerStyle.swift in Sources */,
 				0C8A65668C13D4FCCD7EE3E98CC9A61D /* MSGMessengerView.swift in Sources */,
